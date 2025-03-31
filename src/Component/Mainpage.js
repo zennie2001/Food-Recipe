@@ -30,15 +30,17 @@ const Mainpage = () => {
     }
   return (
     <>
-        <h1 className='head'>FOOD RECIPE APP</h1>
-        <div className='container'>
-            <div className='searchBar'>
-                <input type='text' placeholder='Enter Dishname' onChange={handleInput}/>
-                <button onClick={myFun}>Search</button>   {/* onCLick huda balla myFun vanne function call hunxa ani api fetch hunxa according to given name */}
-            </div>
-            <h3 className='msg'>{msg}</h3>
-            <div>
-                <Mealcards detail={data}/>
+        <div className='bg'>
+            <h1 className='head'>FOOD RECIPE APP</h1>
+            <div className='container'>
+                <div className='searchBar'>
+                    <input type='text' placeholder='Enter Dishname' onChange={handleInput}/>
+                    <button onClick={myFun}>Search</button>   {/* onCLick huda balla myFun vanne function call hunxa ani api fetch hunxa according to given name */}
+                </div>
+                <h3 className='msg'>{msg}</h3>
+                <div>
+                    <Mealcards detail={data}/>
+                </div>
             </div>
         </div>
 
